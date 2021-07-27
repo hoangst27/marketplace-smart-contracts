@@ -13,12 +13,15 @@
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.1",
     "hardhat": "^2.4.3",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "solhint": "^3.3.6"
   },
   "scripts": {
-    "prettier": "prettier --write **/*.sol"
+    "prettier": "prettier --write **/*.sol",
+    "deploy-bsctest": "npx hardhat run --network bsctest scripts/deploy.js"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.2.0"
+    "@openzeppelin/contracts": "^4.1.0"
   }
 }
